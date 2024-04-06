@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conten="width=device-width, inital-scale=1.0">
+    <title>Input Control Element</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <form action="" emthod="post">
+        <label for="firstname">First Name</label>
+    <input type="text" name="firstname" size="60px" placeholder="Pleasse Input your first name"> <br>
+    <label for="lastname">Last Name</label>
+    <input type="text" name="lastname" size="60px" placeholder="Pleasse Input your last name"> <br>
+
+    <label for="mycheckbox">Course</label> <br>
+    <input type="checkbox" name="mycheckbox" id="" value="html">HTML<br>
+    <input type="checkbox" name="mycheckbox" id="" value="css">CSS<br>
+    <input type="checkbox" name="mycheckbox" id="" value="c++">C++<br>
+    <input type="checkbox" name="mycheckbox" id="" value="nodejs">NODEJS<br>
+    <input type="checkbox" name="mycheckbox" id="" value="python">PYTHON<br><br>
+
+    <label for="myradio">Gender</label><br>
+    <input type="radio" name="myradio" id="" value="Male">Male <br>
+    <input type="radio" name="myradio" id="" value="Female">Female <br>
+    <input type="radio" name="myradio" id="" value="Other">Other <br>
+
+    <label for="num">Number</label>
+        <input type="number" max="8" min="3">
+
+        <label for="file">File:</label>
+        <input type="file" name="file" id="" accept="image/*" multiple>
+
+        <label for="color">Color:</label>
+        <input type="color"  name="color" id="">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="" placeholder="Please Input your password">
+
+    <input type="submit" value="Submit Form">
+
+    <input type="button" value="Make Update" onclick="alert('YMCMB, Welcome!')">
+
+    <input tpye="hidden" name="myid" value="goodtogo">
+
+    <label for="tel">Tel:</label>
+    <input type="tel" name="tel" id="">
+
+    
+    <label for="range">Range:</label>
+    <input type="randge" min="30" max="70" step="1" name="range" id="">
+    <input type="url" name="" id="">
+
+    <!--Select TAG-->
+
+    <label for="clubs">Football Clubs</label>
+    <select name="clubs" id="">
+        <option value="" disabled>Slect your Club</option>
+        <option value="Ravens">Ravens</option>
+        <option value="Cheifs">Cheifs</option>
+        <option value="Dolphins">Dolphins</option>
+        <option value="Cowboys">Cowboys</option>
+    </select>
+
+    <!---Text area-->
+    <label for="textarea"></label>
+    <textarea name="textarea" id="" cols="30" rows="20" placeholder="PLease place some info"></textarea>
+    <button type="submit">
+        <img scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkA7bOyrZ7EQk9-na3i4xmQ08N_4_7g5jrYw&s" alt="submit icon" width="60px">
+    </button>
+    <button type="reset">Reset Values</button>
+
+
+    <h1>FORM 2</h1>
+    
+    <form action="" id="form2" name="form2" oninput="out1.value= parseInt(num1.value, 10) + parseInt(num2.value, 10)">
+
+        <label for="num1">Input First Number</label>
+        <input type="number" name="num1" id="num1" value="0">
+
+        <label for="num2">Input Second Number</label>
+        <input type="number" name="num2" id="num2" value="0">
+
+    </form>
+
+    <output name="out1" for="num1 num2" for="form2" style="font-size: 30px;">0</output>
+
+    <form action="" id="form3" name="form3" oninput="out2.value = name1.value">
+        <input type="text" placeholder="Please input your name" name="name1">
+    </form>
+
+<output name>
+    
+</output>
+</form>
+</body>
+</html>
